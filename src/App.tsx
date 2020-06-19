@@ -1,22 +1,34 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
+import './App.css'
+import ProfileCard from './Components/ProfileCard'
+import logo from './imgs/icon.png'
 
 function App() {
   return (
     <div className="App">
       <header>
+        <img src={logo} alt="icon" />
         <input type="text"></input>
-          <button className="search-button"> Search </button>
+        <span>
           <button> Log in </button>
           <button> Sing in </button>
-        </header>
-        <nav>
+        </span>
+      </header>
+      <nav>
+        <h1>Encontre todo tipo de pessoa <br /> para participar de seu podcast.</h1>
+      </nav>
 
-        </nav>
-
-        <main>
-          
-        </main>
+      <main>
+        <ProfileCard 
+            name={'a'}
+          />
+           <ProfileCard 
+            name={'a'}
+          />
+           <ProfileCard 
+            name={'a'}
+          />
+      </main>
     </div>
   );
 }
