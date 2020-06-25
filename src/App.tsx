@@ -19,15 +19,23 @@ function App() {
       </nav>
 
       <main>
-        <ProfileCard 
+        <div>
+          <ProfileCard
             name={'a'}
           />
-           <ProfileCard 
+          <ProfileCard
             name={'a'}
           />
-           <ProfileCard 
+          <ProfileCard
+            name={'a'}
+          /><ProfileCard
+            name={'a'}
+          /><ProfileCard
+            name={'a'}
+          /><ProfileCard
             name={'a'}
           />
+        </div>
       </main>
     </div>
   );
