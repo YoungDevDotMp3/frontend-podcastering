@@ -1,23 +1,19 @@
 import React from 'react';
-import './App.css';
+import { BrowserRouter as Router } from 'react-router-dom';
+import GlobalStyle from './styles/global';
+
+import AppProvider from './hooks/index';
+import Routes from './routes';
 
 function App() {
   return (
-    <div className="App">
-      <header>
-        <input type="text"></input>
-          <button className="search-button"> Search </button>
-          <button> Log in </button>
-          <button> Sing in </button>
-        </header>
-        <nav>
+    <Router>
+      <AppProvider>
+        <Routes />
+      </AppProvider>
 
-        </nav>
-
-        <main>
-          
-        </main>
-    </div>
+      <GlobalStyle />
+    </Router>
   );
 }
 
