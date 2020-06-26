@@ -1,11 +1,11 @@
 import React from 'react';
-import './styles'
-import ProfileCard from '../../components/ProfileCard'
-import logo from './imgs/icon.png'
+import Container from './styles';
+import ProfileCard from '../../components/ProfileCard';
+import logo from '../../assets/logo.svg';
 
 const Dashboard: React.FC = () => {
   return (
-    <div className="App">
+    <Container>
       <header>
         <img src={logo} alt="icon" />
         <input type="text"></input>
@@ -15,30 +15,21 @@ const Dashboard: React.FC = () => {
         </span>
       </header>
       <nav>
-        <h1>Encontre todo tipo de pessoa <br /> para participar de seu podcast.</h1>
+        <h1>
+          Encontre todo tipo de pessoa <br /> para participar de seu podcast.
+        </h1>
       </nav>
 
       <main>
         <div>
-          <ProfileCard
-            name={'a'}
-          />
-          <ProfileCard
-            name={'a'}
-          />
-          <ProfileCard
-            name={'a'}
-          /><ProfileCard
-            name={'a'}
-          /><ProfileCard
-            name={'a'}
-          /><ProfileCard
-            name={'a'}
-          />
+          <ProfileCard />
+          <ProfileCard /> <ProfileCard /> <ProfileCard /> <ProfileCard />
+          <ProfileCard />
+          <ProfileCard />
         </div>
       </main>
-    </div>
+    </Container>
   );
-}
+};
 
 export default Dashboard;
