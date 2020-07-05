@@ -47,17 +47,13 @@ const Dashboard: React.FC = () => {
     },
   ];
 
-
-
   return (
     <Container>
       <TopBar
-        buttons={
-          [
-            { link: '/login', content: 'Log In' },
-            { link: '/signin', content: 'Sign In' }
-          ]
-        }
+        buttons={[
+          { link: '/login', content: 'Log In' },
+          { link: '/signin', content: 'Sign In' },
+        ]}
       />
       <nav style={{ paddingTop: '18vh', paddingBottom: '18vh' }}>
         <h1>
