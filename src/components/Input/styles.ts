@@ -1,11 +1,5 @@
 import styled, { css } from 'styled-components';
-import {
-  mainBlue,
-  almostBlack,
-  almostWhite,
-  mainPink,
-  alertRed,
-} from '../../styles/colors';
+import { mainBlue, almostWhite, mainPink, alertRed } from '../../styles/colors';
 import Tooltip from '../Tooltip';
 
 interface ContainerProps {

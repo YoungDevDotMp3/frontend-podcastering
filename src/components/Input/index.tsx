@@ -12,7 +12,7 @@ import { useField } from '@unform/core';
 import { Container, Error } from './styles';
 import { alertRed } from '../../styles/colors';
 
-interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
+export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   name: string;
   icon?: React.ComponentType<IconBaseProps>;
 }
