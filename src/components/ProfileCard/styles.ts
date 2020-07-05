@@ -1,32 +1,29 @@
 import styled from 'styled-components';
 
-
-export const Card = styled.div`
+const Card = styled.article`
+  position: relative;
   background: #b60e0e;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
+  /* width: fit-content; */
+  height: 300px;
   text-align: center;
-  width: 16vw;
-  background: linear-gradient(153.2deg, #455FCC 24.19%, #D92050 71.16%);
-  display: inline-block;
-  margin: auto;
+  background: linear-gradient(153.2deg, #455fcc 24.19%, #d92050 71.16%);
 
   img {
+    height: 200px;
     width: 100%;
-    height: 17vw;
     object-fit: cover;
     box-shadow: inset 0px -4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px 20px 0 0px;
   }
 
   p {
+    position: absolute;
     color: ivory;
-    font-size: 12px ;
+    font-size: 12px;
     padding: 10px;
   }
+`;
 
-  h1 {
-    color: ivory;
-    font-size: 17px;
-  }
-`
+export default Card;
