@@ -49,17 +49,17 @@ const Dashboard: React.FC = () => {
 
 
 
-    return (
+  return (
     <Container>
-      <header>
-        <img src={logo} alt="icon" />
-        <input type="text"></input>
-        <span>
-          <button> Log in </button>
-          <button> Sing in </button>
-        </span>
-      </header>
-      <nav>
+      <TopBar
+        buttons={
+          [
+            { link: '/login', content: 'Log In' },
+            { link: '/signin', content: 'Sign In' }
+          ]
+        }
+      />
+      <nav style={{ paddingTop: '18vh', paddingBottom: '18vh' }}>
         <h1>
           Encontre todo tipo de pessoa
           <br />
@@ -67,12 +67,18 @@ const Dashboard: React.FC = () => {
         </h1>
       </nav>
       <main>
-        <div>
-          <ProfileCard />
-          <ProfileCard /> <ProfileCard /> <ProfileCard /> <ProfileCard />
-          <ProfileCard />
-          <ProfileCard />
-        </div>
+        <section className="cards">
+          {profiles.map((profile) => {
+            return (
+              <ProfileCard
+                imgLink={profile.imgLink}
+                name={profile.name}
+                description={profile.description}
+                key={profile.id}
+              />
+            );
+          })}
+        </section>
       </main>
     </Container>
   );
